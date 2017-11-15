@@ -16,7 +16,7 @@ namespace ddb
 			{
 				ApiKey = "c67719d1c318404bbf285837cab887b4",
 				ApiSecret = "7f84b6ef3a2e43bb810eff1c57a72e2f",
-				PageSize = 10000
+				PageSize = 10
 			};
 
 			var drinks = ADDbClient.Drinks();
@@ -67,7 +67,7 @@ namespace ddb
 			String[] popular_ingredients = new String[10];
 			int[] times_used = new int[10];
 
-
+#if asdf
 			//Now go through and for each possible combination of ten ingredients, see how many drinks can be made entirely with that ten
 			String[] essential_ingredients = new String[10];
 
@@ -179,7 +179,7 @@ namespace ddb
 				Console.WriteLine(bb + ": " + essential_ingredients[bb]);
 			}
 
-#if asdf
+#else
 			for (ii = 0; ii < 10; ii++)
 			{
 				//Find the highest, remove it from the dictionary, and store it
