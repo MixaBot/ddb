@@ -16,7 +16,7 @@ namespace ddb
 			{
 				ApiKey = "c67719d1c318404bbf285837cab887b4",
 				ApiSecret = "7f84b6ef3a2e43bb810eff1c57a72e2f",
-				PageSize = 10
+				PageSize = 3700
 			};
 
 			var drinks = ADDbClient.Drinks();
@@ -255,6 +255,8 @@ namespace ddb
 			{
 				Console.WriteLine(d.Name);
 			}
+
+			Console.ReadKey();
 #endif
 		}
 	}
